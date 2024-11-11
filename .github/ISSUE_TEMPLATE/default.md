@@ -3,12 +3,16 @@ name: Default
 about: frontend issue template
 title: ''
 labels: ''
-assignees: ''
+assignees: @aubergine/frontend
 
 ---
 
 ## 🍆 Description
 
+-
+
 ## 🥔 TODO
+
+- [ ]
 
 ## ✒️ Notes
