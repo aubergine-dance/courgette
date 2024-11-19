@@ -15,12 +15,14 @@ const router = createBrowserRouter([
         element: <LandingPage />,
       },
       {
-        path: '/problem/:id',
+        path: '/problems/:id',
         element: <ProblemPage />,
-      },
-      {
-        path: '/statement/:id',
-        element: <StatementEditorPage />,
+        children: [
+          {
+            path: 'statements',
+            element: <StatementEditorPage />,
+          },
+        ],
       },
       {
         path: '*', // undefined path
