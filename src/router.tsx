@@ -17,12 +17,10 @@ const router = createBrowserRouter([
       {
         path: '/problems/:id',
         element: <ProblemPage />,
-        children: [
-          {
-            path: 'statements',
-            element: <StatementEditorPage />,
-          },
-        ],
+      },
+      {
+        path: '/problems/:id/statements',
+        element: <StatementEditorPage />,
       },
       {
         path: '*', // undefined path
